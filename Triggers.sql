@@ -57,6 +57,26 @@ BEGIN
 END;
 //
 
+CREATE TRIGGER trg_VerificarSobreposicaoAluguer_BI
+BEFORE INSERT ON Aluguer
+FOR EACH ROW
+BEGIN
+    DECLARE contagem INT;
+
+    SELECT COUNT(*) INTO contagem
+    FROM Aluguer
+    WHERE LimousineMatricula = NEW.LimousineMatricula
+      AND (
+          (NEW.DataHoraInicial BETWEEN DataHoraInicial AND DataHoraFinal) OR
+          (NEW.DataHoraFinal BETWEEN DataHoraInicial AND DataHoraFinal) OR
+          (DataHoraInicial BETWEEN NEW.DataHoraInicial AND NEW.DataHoraFinal) OR
+          (DataHoraFinal BETWEEN NEW.DataHoraInicial AND NEW.DataHoraFinal)
+      );
+
+    IF contagem > 0 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Erro: Datas de aluguer coincidentes para a mesma limousine.';
+    END IF;
+END;
 
 
 
