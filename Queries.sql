@@ -62,10 +62,10 @@ WHERE
 -- Interrogação extra II
 -- Listar as limousines mais lucrativas
 SELECT
-    A.Matricula,
+    A.LimousineMatricula,
     SUM(A.PrecoTotal - A.CustoTotal) AS LucroTotal
 FROM Aluguer A
-GROUP BY A.Matricula
+GROUP BY A.LimousineMatricula
 ORDER BY LucroTotal DESC
 LIMIT 5;
 
@@ -80,8 +80,8 @@ FROM
 JOIN
     Aluguer A ON F.Numero = A.FuncionarioNumero
 WHERE
-    A.DataHoraInicial >= DATE_FORMAT(CURRENT_DATE - INTERVAL 1 MONTH, '%Y-%m-01')
-    AND A.DataHoraFinal < DATE_FORMAT(CURRENT_DATE, '%Y-%m-01')
+    A.DataHoraInicial >= DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-01')
+    AND A.DataHoraFinal < DATE_FORMAT(CURDATE(), '%Y-%m-01')
 GROUP BY
     F.Numero, F.Nome
 ORDER BY
