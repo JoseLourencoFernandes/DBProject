@@ -50,16 +50,6 @@ WHERE Cliente.NIF = '123456789';
 
 
 -- Interrogação extra I
--- Listar as limousines com manutenção próxima (selo, seguro ou vistoria a expirar)
-SELECT *
-FROM Limousine
-WHERE
-    DataSelo < DATE_ADD(CURDATE(), INTERVAL 30 DAY) OR
-    DataSeguro < DATE_ADD(CURDATE(), INTERVAL 30 DAY) OR
-    DataVistoria < DATE_ADD(CURDATE(), INTERVAL 30 DAY);
-
-
--- Interrogação extra II
 -- Listar as limousines mais lucrativas
 SELECT
     A.LimousineMatricula,
@@ -69,7 +59,7 @@ GROUP BY A.LimousineMatricula
 ORDER BY LucroTotal DESC
 LIMIT 5;
 
--- Interrogação extra III
+-- Interrogação extra II
 -- Listar o funcionário com mais alugueres realizados no mês anterior
 SELECT
     F.Numero,
