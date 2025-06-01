@@ -13,7 +13,6 @@ DROP USER IF EXISTS 'juliana.lopes'@'localhost';
 DROP USER IF EXISTS 'francisco.pereira'@'localhost';
 DROP USER IF EXISTS 'vasco.palmeirim'@'localhost';
 
-
 CREATE ROLE IF NOT EXISTS 'operador'@'localhost';
 CREATE ROLE IF NOT EXISTS 'administrador'@'localhost';
 CREATE ROLE IF NOT EXISTS 'gestor'@'localhost';
@@ -40,6 +39,13 @@ GRANT ALL PRIVILEGES ON PrestigeLimousines.* TO 'administrador'@'localhost';
 
 
 -- CRIAR UTILIZADORES
+
+-- DROP USER IF EXISTS 'helder.cerqueira'@'localhost';
+-- DROP USER IF EXISTS  'vitor.cerqueira'@'localhost';
+-- DROP USER IF EXISTS 'eusebio.cerqueira'@'localhost';
+-- DROP USER IF EXISTS 'juliana.lopes'@'localhost';
+-- DROP USER IF EXISTS 'francisco.pereira'@'localhost';
+-- DROP USER IF EXISTS 'vasco.palmeirim'@'localhost';
 
 CREATE USER 'helder.cerqueira'@'localhost' IDENTIFIED BY 'root';
 CREATE USER 'vitor.cerqueira'@'localhost' IDENTIFIED BY 'root';
