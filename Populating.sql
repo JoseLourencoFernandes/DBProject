@@ -28,5 +28,3 @@ INSERT INTO Aluguer (LocalDeEntrega, CustoTotal, PrecoTotal, DataHoraInicial, Da
   ('Hotel PortoBay', 100.00, 225.00, '2025-05-10 10:00:00', '2025-05-10 15:00:00', 1, '123456789', 'Porto', 'AA-00-AA'),
   ('Aeroporto de Lisboa', 110.00, 250.00, '2025-05-12 09:00:00', '2025-05-12 14:00:00', 2, '987654321', 'Cascais', 'BB-11-BB'),
   (NULL, 125.00, 275.00, '2025-05-15 14:00:00', '2025-05-15 19:00:00', 3, '192837465', 'Vilamoura', 'CC-22-CC');
-
-

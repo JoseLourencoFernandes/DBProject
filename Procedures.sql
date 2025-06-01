@@ -2,7 +2,7 @@ DELIMITER //
 
 
 
-DROP PROCEDURE IF EXISTS CalcularDadosStand //
+-- DROP PROCEDURE IF EXISTS CalcularDadosStand //
 
 CREATE PROCEDURE CalcularDadosStand(
     IN p_StandLocal VARCHAR(50)
@@ -46,7 +46,8 @@ END//
 
 
 
-DROP PROCEDURE IF EXISTS AtualizarManutencao //
+-- DROP PROCEDURE IF EXISTS AtualizarManutencao //
+
 CREATE PROCEDURE AtualizarManutencao(
     IN  p_matricula      VARCHAR(10),
     IN  p_data_selo      DATE,
@@ -108,5 +109,5 @@ CALL AtualizarManutencao(
 -- Verificar resultado
 SELECT @resultado;
 
-SELECT * FROM limousine
+SELECT * FROM Limousine
 	WHERE Matricula = 'AA-00-AA';

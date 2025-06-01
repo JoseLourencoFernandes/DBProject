@@ -10,10 +10,9 @@ PREPARE ListarAlugueres FROM
     ORDER BY DataHoraInicial;
     ';
 
-SET @intervalo = 'semana';
-
+SET @intervalo = NULL;
 EXECUTE ListarAlugueres USING @intervalo, @intervalo, @intervalo, @intervalo;
-DEALLOCATE PREPARE ListarAlugueres;
+-- DEALLOCATE PREPARE ListarAlugueres;
 
 
 -- RM5
@@ -28,7 +27,7 @@ SET @CapacidadeParam = 5;
 SET @CapacidadeNullCheck = @CapacidadeParam;
 
 EXECUTE ListarLimousines USING @CorParam, @CorNullCheck, @CapacidadeParam, @CapacidadeNullCheck;
-DEALLOCATE PREPARE ListarLimousines;
+-- DEALLOCATE PREPARE ListarLimousines;
 
 
 -- RM8

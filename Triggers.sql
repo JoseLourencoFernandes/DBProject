@@ -1,6 +1,5 @@
 DELIMITER //
 
-
 CREATE TRIGGER tr_VerificarAluguer_BI
 BEFORE INSERT ON Aluguer
 FOR EACH ROW
@@ -77,7 +76,5 @@ BEGIN
         SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Erro: Datas de aluguer coincidentes para a mesma limousine.';
     END IF;
 END;
-
-
 
 DELIMITER ;

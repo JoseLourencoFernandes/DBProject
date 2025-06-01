@@ -68,8 +68,3 @@ CREATE TABLE Aluguer(
 		REFERENCES Limousine(Matricula)
 );
 
-
-
-
-
-    
