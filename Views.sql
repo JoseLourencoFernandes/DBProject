@@ -1,3 +1,9 @@
+CREATE VIEW vwLimousinesOperacionais AS
+	SELECT l.Matricula, l.PrecoHora, l.Cor, l.Capacidade, l.StandLocal AS Stand FROM 
+		Limousine l
+	WHERE l.Operacional = TRUE;
+    
+
 
 SELECT * FROM vwLimousinesOperacionais;
 
