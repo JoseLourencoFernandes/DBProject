@@ -17,3 +17,4 @@ END$$
 
 DELIMITER ;
 
+SELECT ClienteFrequente('123456789', 2);

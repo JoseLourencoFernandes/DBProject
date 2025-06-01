@@ -6,9 +6,9 @@
     "DataHoraInicial": "2024-06-15 18:00:00",
     "DataHoraFinal": "2024-06-15 21:00:00",
     "FuncionarioNumero": 1,
-    "ClienteNIF": "123456789",
+    "ClienteNIF": "123654789",
     "StandLocal": "Lisboa Centro",
-    "LimousineMatricula": "12-AB-34"
+    "LimousineMatricula": "12-AA-34"
   },
   {
     "LocalDeEntrega": "Aeroporto Francisco Sá Carneiro, Porto",
@@ -19,7 +19,7 @@
     "FuncionarioNumero": 2,
     "ClienteNIF": "234567890",
     "StandLocal": "Porto Norte",
-    "LimousineMatricula": "56-CD-78"
+    "LimousineMatricula": "56-CC-78"
   },
   {
     "LocalDeEntrega": null,
@@ -30,7 +30,7 @@
     "FuncionarioNumero": 3,
     "ClienteNIF": "345678901",
     "StandLocal": "Lisboa Centro",
-    "LimousineMatricula": "12-AB-34"
+    "LimousineMatricula": "12-AA-34"
   },
   {
     "LocalDeEntrega": "Marina de Vilamoura, Faro",
@@ -41,7 +41,7 @@
     "FuncionarioNumero": 5,
     "ClienteNIF": "456789012",
     "StandLocal": "Faro Aeroporto",
-    "LimousineMatricula": "34-GH-56"
+    "LimousineMatricula": "34-GG-56"
   },
   {
     "LocalDeEntrega": "Universidade do Minho, Braga",
@@ -51,7 +51,7 @@
     "DataHoraFinal": "2024-07-05 12:00:00",
     "FuncionarioNumero": 6,
     "ClienteNIF": "567890123",
-    "StandLocal": "Braga Centro",
-    "LimousineMatricula": "78-IJ-90"
+    "StandLocal": "Faro Aeroporto",
+    "LimousineMatricula": "78-II-90"
   }
 ]
