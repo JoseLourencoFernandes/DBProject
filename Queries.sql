@@ -15,6 +15,7 @@ EXECUTE ListarAlugueres USING @intervalo, @intervalo, @intervalo, @intervalo;
 -- DEALLOCATE PREPARE ListarAlugueres;
 
 
+
 -- RM5
 PREPARE ListarLimousines FROM
     'SELECT * FROM Limousine
@@ -46,6 +47,14 @@ SELECT
 FROM Cliente
 JOIN Aluguer ON Cliente.NIF = Aluguer.ClienteNIF
 WHERE Cliente.NIF = '123456789';
+
+-- RM9
+SELECT Matricula, DataSeguro, DataSelo, DataVistoria
+FROM Limousine
+WHERE 
+      DataSeguro BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 30 DAY)
+   OR DataSelo    BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 30 DAY)
+   OR DataVistoria BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 30 DAY);
 
 
 -- Interrogação extra I
