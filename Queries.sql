@@ -27,7 +27,11 @@ SET @CorNullCheck = @CorParam;
 SET @CapacidadeParam = 5;
 SET @CapacidadeNullCheck = @CapacidadeParam;
 
-EXECUTE ListarLimousines USING @CorParam, @CorNullCheck, @CapacidadeParam, @CapacidadeNullCheck;
+EXECUTE ListarLimousines USING 
+@CorParam, 
+@CorNullCheck, 
+@CapacidadeParam, 
+@CapacidadeNullCheck;
 -- DEALLOCATE PREPARE ListarLimousines;
 
 
