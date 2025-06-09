@@ -109,9 +109,9 @@ python3 migrar.py --dest 127.0.0.1:3306:root:root:PrestigeLimousines table 127.0
 
 ## Authors
 
-* *Daniel Parente*
-* *Gabriel Dantas*
-* *José Fernandes*
-* *Simão Oliveira*
+- *Daniel Parente* -> [@parente33](https://github.com/parente33)
+- *Gabriel Dantas* -> [@gabil88](https://github.com/gabil88)
+- *José Fernandes* -> [@JoseLourencoFernandes](https://github.com/JoseLourencoFernandes)
+- *Simão Oliveira* -> [@SimaoOliveira05](https://github.com/SimaoOliveira05)
 
 ---
