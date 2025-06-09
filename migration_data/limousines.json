@@ -1,0 +1,62 @@
+[
+  {
+    "Matricula": "12-AA-34",
+    "CustoHora": 45.50,
+    "PrecoHora": 120.00,
+    "Cor": "Preto",
+    "Capacidade": 8,
+    "DataSeguro": "2025-12-31",
+    "DataSelo": "2025-08-15",
+    "DataVistoria": "2025-10-20",
+    "Operacional": true,
+    "StandLocal": "Lisboa Centro"
+  },
+  {
+    "Matricula": "56-CC-78",
+    "CustoHora": 38.75,
+    "PrecoHora": 95.00,
+    "Cor": "Branco Pérola",
+    "Capacidade": 6,
+    "DataSeguro": "2025-11-20",
+    "DataSelo": "2025-07-10",
+    "DataVistoria": "2025-09-05",
+    "Operacional": true,
+    "StandLocal": "Porto Norte"
+  },
+  {
+    "Matricula": "90-EE-12",
+    "CustoHora": 52.25,
+    "PrecoHora": 150.00,
+    "Cor": "Cinzento Metalizado",
+    "Capacidade": 10,
+    "DataSeguro": "2026-01-15",
+    "DataSelo": "2025-09-30",
+    "DataVistoria": "2025-11-12",
+    "Operacional": false,
+    "StandLocal": "Coimbra Sul"
+  },
+  {
+    "Matricula": "34-GG-56",
+    "CustoHora": 41.00,
+    "PrecoHora": 110.00,
+    "Cor": "Azul Escuro",
+    "Capacidade": 7,
+    "DataSeguro": "2025-10-08",
+    "DataSelo": "2025-06-25",
+    "DataVistoria": "2025-08-30",
+    "Operacional": true,
+    "StandLocal": "Faro Aeroporto"
+  },
+  {
+    "Matricula": "78-II-90",
+    "CustoHora": 35.80,
+    "PrecoHora": 85.00,
+    "Cor": "Bordeaux",
+    "Capacidade": 5,
+    "DataSeguro": "2025-09-12",
+    "DataSelo": "2025-05-18",
+    "DataVistoria": "2025-07-22",
+    "Operacional": true,
+    "StandLocal": "Faro Aeroporto"
+  }
+]
