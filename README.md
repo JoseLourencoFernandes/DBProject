@@ -103,7 +103,7 @@ python3 migrar.py --dest 127.0.0.1:3306:root:root:PrestigeLimousines table 127.0
 
 ## Grade
 
-**⭐ Grade: X / 20 ⭐**
+**⭐ Grade: 17 / 20 ⭐**
 
 ---
 
