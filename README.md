@@ -1,5 +1,3 @@
-# GRADE 17/20 ⭐
-
 # Prestige Limousines - Relational Database Project
 
 **University of Minho**
